@@ -1,0 +1,38 @@
+GET http://localhost:3000/blogs
+
+###
+
+GET http://localhost:3000/blogs/63eb4922850fa71c99081cf8
+
+###
+POST http://localhost:3000/blogs
+Content-Type: application/json
+
+        {
+            "title": "This is Blog 2",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur felis libero, in porta magna vestibulum eget. Suspendisse malesuada dui in ligula imperdiet pharetra. Vivamus felis nisl, gravida non porttitor eget, molestie sed lorem. Integer finibus dui arcu, nec egestas nulla posuere nec. Quisque eu ex nec dolor egestas condimentum ac ac nulla. Phasellus ut cursus ligula. Etiam vel laoreet erat. Vestibulum sit amet erat id velit sodales efficitur id in sem. Quisque ac cursus nunc. Aenean feugiat ex metus, at tristique elit accumsan eu. Nam placerat dolor sit amet lorem aliquet congue.",
+            "tags": [
+                "java",
+                "html",
+                "design"
+            ]
+        }
+
+###
+
+PATCH http://localhost:3000/blogs/63eb14a6d9f7019170c3e45c
+Content-Type: application/json
+
+        {
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur felis libero, in porta magna vestibulum eget. Suspendisse malesuada dui in ligula imperdiet pharetra. Vivamus felis nisl, gravida non porttitor eget, molestie sed lorem. Integer finibus dui arcu, nec egestas nulla posuere nec. Quisque eu ex nec dolor egestas condimentum ac ac nulla. Phasellus ut cursus ligula. Etiam vel laoreet erat. Vestibulum sit amet erat id velit sodales efficitur id in sem. Quisque ac cursus nunc. Aenean feugiat ex metus, at tristique elit accumsan eu. Nam placerat dolor sit amet lorem aliquet congue.",
+            "tags": [
+                "webdev",
+                "coding",
+                "news",
+                "json"
+            ]
+        }
+
+###
+
+DELETE  http://localhost:3000/blogs/63eb14a6d9f7019170c3e45c
