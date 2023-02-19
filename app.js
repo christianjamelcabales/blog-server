@@ -26,8 +26,10 @@ app.use(express.json())
 const blogsRouter = require('./routes/blogs')
 app.use('/blogs', blogsRouter)
 
-
+app.get("/", function(req, res){ //request, response
+    res.send("<h1>Server is Running:)</h1>");
+})
 
 app.listen(port, ()=>{
-    console.log('Server is Running on PORT 3000.');
+    console.log(`Server is Running on PORT ${port}`);
 })
